@@ -9,21 +9,21 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 #Months to be analysed
-MONTH_DATA = { 'january': 1,
-                'february': 2,
-                'march': 3,
-                'april': 4,
+MONTH_DATA = { 'january' or 'jan': 1,
+                'february' or 'feb': 2,
+                'march' or 'mar': 3,
+                'april' or 'apr': 4,
                 'may': 5,
-                'june': 6}
+                'june' or 'jun': 6}
 
 #Days to be analysed
-WEEK_DATA = { 'monday': 0,
-                'tuesday': 1,
-                'wednesday': 2,
-                'thursday': 3,
-                'friday': 4,
-                'saturday': 5,
-                'sunday': 6}
+WEEK_DATA = { 'monday' or 'mon': 0,
+                'tuesday'or 'tues': 1,
+                'wednesday' or 'wed': 2,
+                'thursday' or 'thurs': 3,
+                'friday' or 'fri': 4,
+                'saturday' or 'sat': 5,
+                'sunday' or 'sun': 6}
 
 def get_filters():
     """
@@ -56,9 +56,9 @@ def get_filters():
     while 1:
         choice = input('Do you want to filter the data by month and/or week? Yes/No ').lower()
         print()
-        if choice=='yes' or choice=='y':
+        if choice=='yes':
             choice=True
-        elif choice=='no' or choice=='n':
+        elif choice=='no':
             choice=False
         else:
             print('Sorry, i am confused. Kindly input "yes" or "no".')
