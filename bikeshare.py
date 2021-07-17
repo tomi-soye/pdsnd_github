@@ -9,12 +9,12 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 #Months to be analysed
-MONTH_DATA = { 'january': 1,
-                'february': 2,
-                'march': 3,
-                'april': 4,
+MONTH_DATA = { 'january' or 'jan': 1,
+                'february' or 'feb': 2,
+                'march' or 'mar': 3,
+                'april' or 'apr': 4,
                 'may': 5,
-                'june': 6}
+                'june' or 'jun': 6}
 
 #Days to be analysed
 WEEK_DATA = { 'monday' or 'mon': 0,
