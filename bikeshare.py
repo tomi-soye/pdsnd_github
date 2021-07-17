@@ -17,13 +17,13 @@ MONTH_DATA = { 'january': 1,
                 'june': 6}
 
 #Days to be analysed
-WEEK_DATA = { 'monday': 0,
-                'tuesday': 1,
-                'wednesday': 2,
-                'thursday': 3,
-                'friday': 4,
-                'saturday': 5,
-                'sunday': 6}
+WEEK_DATA = { 'monday' or 'mon': 0,
+                'tuesday'or 'tues': 1,
+                'wednesday' or 'wed': 2,
+                'thursday' or 'thurs': 3,
+                'friday' or 'fri': 4,
+                'saturday' or 'sat': 5,
+                'sunday' or 'sun': 6}
 
 def get_filters():
     """
