@@ -56,9 +56,9 @@ def get_filters():
     while 1:
         choice = input('Do you want to filter the data by month and/or week? Yes/No ').lower()
         print()
-        if choice=='yes' or choice=='y':
+        if choice=='yes':
             choice=True
-        elif choice=='no' or choice=='n':
+        elif choice=='no':
             choice=False
         else:
             print('Sorry, i am confused. Kindly input "yes" or "no".')
